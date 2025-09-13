@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coffee Order Form</title>
+</head>
+<body>
+  <h1>Coffee Order Form</h1>
+
+  <form action="#" method="post">
+    <!-- Customer Name -->
+    <label for="customerName">Customer Name:</label><br />
+    <input type="text" id="customerName" name="customerName" required /><br /><br />
+
+    <!-- Email Address -->
+    <label for="email">Email Address:</label><br />
+    <input type="email" id="email" name="email" required /><br /><br />
+
+    <!-- Coffee Type -->
+    <label for="coffeeType">Coffee Type:</label><br />
+    <select id="coffeeType" name="coffeeType" required>
+      <option value="" disabled selected>Select coffee type</option>
+      <option value="latte">Latte</option>
+      <option value="cappuccino">Cappuccino</option>
+      <option value="americano">Americano</option>
+      <option value="espresso">Espresso</option>
+    </select><br /><br />
+
+    <!-- Size (Radio Buttons) -->
+    <fieldset>
+      <legend>Size:</legend>
+      <input type="radio" id="sizeSmall" name="size" value="small" required />
+      <label for="sizeSmall">Small</label><br />
+
+      <input type="radio" id="sizeMedium" name="size" value="medium" />
+      <label for="sizeMedium">Medium</label><br />
+
+      <input type="radio" id="sizeLarge" name="size" value="large" />
+      <label for="sizeLarge">Large</label>
+    </fieldset>
+    <br />
+
+    <!-- Extras (Checkboxes) -->
+    <fieldset>
+      <legend>Extras:</legend>
+      <input type="checkbox" id="whippedCream" name="extras" value="whippedCream" />
+      <label for="whippedCream">Whipped Cream</label><br />
+
+      <input type="checkbox" id="extraShot" name="extras" value="extraShot" />
+      <label for="extraShot">Extra Shot</label><br />
+
+      <input type="checkbox" id="almondMilk" name="extras" value="almondMilk" />
+      <label for="almondMilk">Almond Milk</label>
+    </fieldset>
+    <br />
+
+    <!-- Special Instructions -->
+    <label for="instructions">Special Instructions:</label><br />
+    <textarea id="instructions" name="instructions" rows="4" cols="40" placeholder="Enter any special instructions here..."></textarea><br /><br />
+
+    <!-- Submit Button -->
+    <button type="submit">Submit Order</button>
+  </form>
+</body>
+</html>
+
+
